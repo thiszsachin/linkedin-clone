@@ -8,14 +8,16 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { Link } from "@material-ui/core";
-import "../../images/profile-bg.jpg";
+import PersonAddIcon from "@material-ui/icons/PersonAdd";
+import LaunchIcon from "@material-ui/icons/Launch";
+import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 700,
+    // maxWidth: 700,
   },
   media: {
-    height: 140,
+    height: 150,
   },
 });
 
@@ -27,7 +29,7 @@ export default function Profile() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="../../images/profile-bg.jpg"
+          image="https://media-exp1.licdn.com/dms/image/C561BAQHXuBYDcBUm2w/company-background_10000/0/1620411660155?e=1626728400&v=beta&t=_bKyCyGKabdFPjQfLPB0jOCqvnX9AgOYtf3dT4ARZ1E"
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -40,18 +42,28 @@ export default function Profile() {
           <Typography variant="body2" color="textSecondary">
             Design . San Francisco, CA . 101,282 followers
           </Typography>
-          <Link href="#">See all 358 employees on LinkedIn </Link>
+          <Link href="#">See all 358 employees on LinkedIn</Link>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" variant="contained">
+        <Button
+          size="small"
+          color="primary"
+          variant="contained"
+          startIcon={<PersonAddIcon />}
+        >
           Follow
         </Button>
-        <Button size="small" color="primary" variant="outlined">
+        <Button
+          size="small"
+          color="primary"
+          variant="outlined"
+          startIcon={<LaunchIcon />}
+        >
           Visit website
         </Button>
         <Button size="small" color="primary" variant="outlined">
-          ...
+          {<MoreHorizIcon />}
         </Button>
       </CardActions>
     </Card>
