@@ -24,10 +24,10 @@ const Pages = () => {
           display: "flex",
           color: "grey",
           justifyContent: "center",
-          fontWeight: "800",
+          fontWeight: "700",
         }}
       >
-        See all similar pages
+        <p>See all similar pages</p>
       </div>
     </Paper>
   );
