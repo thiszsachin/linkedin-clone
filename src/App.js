@@ -1,6 +1,7 @@
 import { Container } from "@material-ui/core";
 import About from "./About/About";
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import MainNav from "./components/MainNav/MainNav";
 import Pages from "./components/Pages/Pages";
@@ -38,6 +39,9 @@ function App() {
           <div style={{ width: "30%" }}>
             <div>
               <Pages />
+            </div>
+            <div>
+              <Footer />
             </div>
           </div>
         </div>

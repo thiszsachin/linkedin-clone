@@ -15,10 +15,11 @@ export default function About() {
       <div style={{ display: "flex" }}>
         <div
           style={{
-            border: "2px solid grey",
+            border: "1px solid grey",
             width: "50%",
             padding: "10px",
             marginRight: "10px",
+            borderRadius: "8px",
           }}
         >
           <p>Website URl</p>
@@ -27,7 +28,12 @@ export default function About() {
           </a>
         </div>
         <div
-          style={{ border: "2px solid grey", width: "50%", padding: "10px" }}
+          style={{
+            border: "1px solid grey",
+            width: "50%",
+            padding: "10px",
+            borderRadius: "8px",
+          }}
         >
           <p style={{ color: "grey" }}>Funding via Crunchbase</p>
           <h4>Series D</h4>
