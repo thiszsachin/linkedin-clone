@@ -10,21 +10,13 @@ import ProfileNav from "./components/ProfileNav/ProfileNav";
 
 function App() {
   return (
-    <Container className="App widthVW">
+    <Container className="App ">
       <Header />
       <MainNav />
-      <div
-        widthVW
-        style={{
-          backgroundColor: "#dae0eb",
-          padding: "20px 50px",
-        }}
-      >
-        <div className="main-container" style={{ display: "flex" }}>
-          <div
-            className="profile-container"
-            style={{ width: "70%", paddingRight: "15px" }}
-          >
+      <div className="wrapperDiv">
+        {" "}
+        <div className="main-container">
+          <div className="profile-container">
             <div className="profile">
               <div style={{ paddingBottom: "10px" }}>
                 <Profile />
@@ -37,7 +29,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="pages-footer" style={{ width: "30%" }}>
+          <div className="pages-footer">
             <div>
               <Pages />
             </div>
