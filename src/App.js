@@ -41,7 +41,6 @@ function App() {
             <div>
               <Pages />
             </div>
-            <hr />
             <div>
               <Footer />
             </div>
