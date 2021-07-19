@@ -2,6 +2,10 @@ import React from "react";
 import Paper from "@material-ui/core/Paper";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
+import HomeIcon from "@material-ui/icons/Home";
+import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
+import WorkIcon from "@material-ui/icons/Work";
+import PersonIcon from "@material-ui/icons/Person";
 
 const width = 500;
 
@@ -25,10 +29,14 @@ export default function MainNav() {
         onChange={handleChange}
         aria-label="disabled tabs example"
       >
-        <Tab label="Home" style={widthModifier} />
-        <Tab label="My Network" style={widthModifier} />
-        <Tab label="Job Offers" style={widthModifier} />
-        <Tab label="My Profile" style={widthModifier} />
+        <Tab icon={<HomeIcon />} label="Home" style={widthModifier} />
+        <Tab
+          icon={<PeopleAltIcon />}
+          label="My Network"
+          style={widthModifier}
+        />
+        <Tab icon={<WorkIcon />} label="Job Offers" style={widthModifier} />
+        <Tab icon={<PersonIcon />} label="My Profile" style={widthModifier} />
       </Tabs>
     </Paper>
   );

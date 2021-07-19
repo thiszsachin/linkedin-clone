@@ -10,7 +10,13 @@ const Footer = () => {
       </div>
       <hr />
       <div>
-        <span style={{ fontWeight: "1000", marginRight: "100px" }}>
+        <span
+          style={{
+            fontWeight: "1000",
+            marginRight: "100px",
+            marginLeft: "15px",
+          }}
+        >
           Linked{" "}
           <span
             style={{
