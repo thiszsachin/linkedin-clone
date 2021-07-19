@@ -10,10 +10,11 @@ import ProfileNav from "./components/ProfileNav/ProfileNav";
 
 function App() {
   return (
-    <Container className="App">
+    <Container className="App widthVW">
       <Header />
       <MainNav />
       <div
+        widthVW
         style={{
           backgroundColor: "#dae0eb",
           padding: "20px 50px",
@@ -36,10 +37,11 @@ function App() {
               </div>
             </div>
           </div>
-          <div style={{ width: "30%" }}>
+          <div className="pages-footer" style={{ width: "30%" }}>
             <div>
               <Pages />
             </div>
+            <hr />
             <div>
               <Footer />
             </div>

@@ -16,6 +16,10 @@ const Pages = () => {
       <Page name="Sketch" type="Design" followers="33k" logo={sketch} />
       <Page name="Dribble" type="Design" followers="162k" logo={dribble} />
       <Page name="Slack" type="Software" followers="192k" logo={slack} />
+      <hr />
+      <h3 style={{ display: "flex", color: "grey", justifyContent: "center" }}>
+        see all similar pages
+      </h3>
     </Paper>
   );
 };
